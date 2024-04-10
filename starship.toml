@@ -50,6 +50,7 @@ show_always = true
 [hostname]
 ssh_only = false
 format = '[$hostname](#83D4BA) '
+# format = '[$hostname](#ffdfba) '
 disabled = false
 
 # Shows current directory
@@ -65,10 +66,11 @@ style = '#7ed1fb' # yellow bold
 
 # Shows current git branch
 [git_branch]
-symbol = ' '
-# symbol = ' '
+# symbol = ' '
+# symbol = ' '
 # symbol = ' '
-format = '[$symbol\[$branch\]]($style) '
+# format = '[$symbol\[$branch\]]($style) '
+format = '[\[$branch\]]($style) '
 # truncation_length = 0
 # truncation_symbol = '//'
 style = '#E0C5FF'
@@ -107,7 +109,8 @@ disabled = true
 disabled = true
 
 [python]
-symbol = '󰌠'
+# symbol = '󰌠'
+symbol = 'py'
 style = '#FFFFCC'
 python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
 format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
@@ -115,9 +118,9 @@ format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 [nodejs]
 disabled = false
-symbol = ' '
+symbol = 'node '
 format = '[$symbol($version )]($style)'
-style = '#065535' # 
+style = '#be9b7b' # 
 
 [ruby]
 disabled = true
@@ -127,7 +130,7 @@ disabled = true
 
 [conda]
 format = '[$environment]($style) '
-style = '#9E644C'
+style = '#ffb3ba'
 ignore_base = true
 
 [cmd_duration]
