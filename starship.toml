@@ -4,7 +4,9 @@
 add_newline = false
 # command_timeout = 2000
 
-format = """$env_var$os$hostname$kubernetes$directory$git_branch$git_status$conda$python$nodejs$cmd_duration$character"""
+format = """$env_var$hostname$kubernetes$directory$git_branch$git_status$conda$python$nodejs$cmd_duration$character"""
+# format = """$env_var$os$hostname$kubernetes$directory$git_branch$git_status$conda$python$nodejs$cmd_duration$character"""
+
 
 [character]
 success_symbol = ""
@@ -25,7 +27,7 @@ disabled = false
 # ---
 
 [os]
-format = '[$symbol](bold white) '   
+format = '[$symbol](#e4ecfb) '   
 disabled = false
 
 [os.symbols]
@@ -49,7 +51,7 @@ show_always = true
 # Shows the hostname
 [hostname]
 ssh_only = false
-format = '[$hostname](#83D4BA) '
+format = '[$hostname](#9aa6bc) '
 # format = '[$hostname](#ffdfba) '
 disabled = false
 
@@ -61,7 +63,7 @@ home_symbol = '~'
 # read_only_style = '197'
 read_only = '  '
 format = '[$path]($style)[$read_only]($read_only_style) '
-style = '#7ed1fb' # yellow bold
+style = '#aec7f6' # yellow bold
 
 
 # Shows current git branch
@@ -111,7 +113,7 @@ disabled = true
 [python]
 # symbol = '󰌠'
 symbol = 'py'
-style = '#FFFFCC'
+style = '#E6DF94'
 python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
 format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
@@ -120,7 +122,7 @@ format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 disabled = false
 symbol = 'node '
 format = '[$symbol($version )]($style)'
-style = '#be9b7b' # 
+style = '#83D4BA' # 
 
 [ruby]
 disabled = true
